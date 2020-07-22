@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB 1 - CSS</title>
+    <style>
+        body {
+            margin: 0
+        }
+        a {
+            color:seagreen;
+            text-decoration: none;
+        }
+        h1 {
+            text-align: center;
+            font-size: 45px;
+            border-bottom: 1px solid gray;
+            margin:0;
+            padding: 20px;
+        }
+        .saw {
+            color:gray;
+        }
+        #active {
+            color:darkblue;
+        }
+        .active1 {
+            color:skyblue;
+        }
+        ol {
+            border-right: 1px solid gray;
+            width: 100px;
+            margin: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1><a href="index.html" </a> CSS</h1>
+    
+    <Ol>
+        <li><a href="1.html">HTML</a> </li>
+        <li><a href="2.html" style="color:black"> CSS</a>  </li>
+        <li><a href="3.html">JavaScript</a> </li>
+        <li><a href="4.html" class="saw active1" id="active"> Summary</a></li>
+    </ol>
+    <p>
+        <u>a</u>는 head 태그 안에서 쓰이는 지정자 selector이다. a 태그로 지정된 모든 것들을 다 바꿀 수 있다. <br>
+        <u>color</u>는 property이다. <u>red는 value이다.</u> 따라서 어떠한 property가 존재하는지와 어떤 다양한 선택자가 존재하는지 검색을 통해 알 수 있다.
+    </p>
+    <p>
+        id 값은 한 번만 쓰게 돼 있다.(중복이 안된다.) id값이 서열이 제일 높다 (3.skyblue에서 darkblue로 바꿈) ) <br>
+        class 값은 중간서열이다. class는 가장 최근에 처리한 것을 우선으로 한다. (2.gray에서 skyblue로 바뀌었다.) <br>
+        tag 값이 서열이 제일 낮다. <br>
+        class로 그룹을 지정해서 한꺼번에 여러 가지 정보를 변경할 수 있다. (1.summary 색깔이 gray로 바뀐 것을 참고해라.)
+    </p>
+    <p>
+        구글에서 CSS box model만 쳐도 잘 나와있으니 잘 활용하자. <br>
+        마우스 우클릭, 검사로 어떤 CSS스타일의 영향을 받고있는가를 보여주는 기능이 있다. <br>
+        HTML의 태그들은 그 태그의 기본적인 성격에 따라서 화면 전체를 쓰기도 하고 자기 크기만큼을 갖기도 한다. 화면 전체를 쓰는 것을 block level elemnet, 자기 크기만 갖는 것을 inline element. <br>
+        그리고 콘텐츠의 크기를 지정할 때는 폭은 width, 높이는 height 값을 지정한다. 콘텐츠와 바깥쪽 테두리 사이의 간격은 padding을 쓴다. 테두리와 테두리 사이에는 margin을 쓴다.
+    </p>
+</body>
+</html>
